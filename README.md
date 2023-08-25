@@ -2,8 +2,7 @@
 Repository to study OCP Java 17. You can contribute and to make a fork this project.
 
 Access page Oracle.
-https://education.oracle.com/pt_BR/cat%C3%A1logo-de-produtos-ouexam-pexam_1z0-829/pexam_1Z0-829
-
+[https://education.oracle.com/java-se-17-developer/pexam_1Z0-829](https://education.oracle.com/java-se-17-developer/pexam_1Z0-829)
 <table>
 <tbody>
 <tr>
