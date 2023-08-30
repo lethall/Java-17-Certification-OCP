@@ -5,4 +5,8 @@ public abstract class Canine extends Mammal {
     public String speak() {
         return "Woof!";
     }
+    @Override
+    public String eat() {
+        return "Meat based foods.";
+    }
 }

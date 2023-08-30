@@ -67,15 +67,31 @@ public abstract class Animal {
 
     @Override
     public String toString() {
-        return this.getClass().getName() + "{" +
-                "isWarmBlooded=" + isWarmBlooded +
-                ", hasVertebra=" + hasVertebra +
-                ", breathsAir=" + breathsAir +
-                ", breathsWater=" + breathsWater +
-                ", flies=" + flies +
-                ", primarySkin=" + primarySkin +
-                ", secondarySkin=" + secondarySkin +
-                '}';
+        //refactor to stringbuilder
+        //learn more about mutable and immutable
+        StringBuilder animalSummary = new StringBuilder();
+        animalSummary.append("{isWarmBlooded=" + isWarmBlooded);
+        animalSummary.append(", hasVertebra=" + hasVertebra);
+        animalSummary.append(", breathsAir=" + breathsAir);
+        animalSummary.append(", breathsWater=" + breathsWater);
+        animalSummary.append(", flies=" + flies);
+        animalSummary.append(", primarySkin=" + primarySkin);
+        animalSummary.append(", secondarySkin=" + secondarySkin);
+        animalSummary.append(", ");
+
+        if (this instanceof Speakable){
+            animalSummary.append("Sounds like: " + ((Speakable)this).speak());
+        }
+        if (this instanceof Diggable){
+            animalSummary.append(" Diggable: " + ((Diggable)this).dig());
+        }
+        else {
+            animalSummary.append("Crickets Chirping.");
+        }
+        animalSummary.append("}");
+        animalSummary.insert(0, "James", 2, 4);
+        return animalSummary.toString();
+        //be familiar with all of what string does, explain how format works recap at 2pm
     }
 
     public enum Skin {

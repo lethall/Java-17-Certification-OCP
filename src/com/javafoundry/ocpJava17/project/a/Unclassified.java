@@ -1,6 +1,6 @@
 package com.javafoundry.ocpJava17.project.a;
 
-public abstract class Mammal extends Animal implements Speakable, Diggable {
+public abstract class Unclassified extends Animal {
     {
         setBreathsAir(true);
         setBreathsWater(false);
@@ -10,7 +10,4 @@ public abstract class Mammal extends Animal implements Speakable, Diggable {
         setSecondarySkin(null);
         setWarmBlooded(true);
     }
-
-    public abstract String eat();
-
 }
