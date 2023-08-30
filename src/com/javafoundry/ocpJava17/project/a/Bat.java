@@ -29,4 +29,9 @@ public class Bat extends Mammal {
     public String dig() {
         return "Digs with hind feet";
     }
+
+    @Override
+    public String eat() {
+        return null;
+    }
 }
