@@ -92,7 +92,10 @@ public abstract class Vehicle {
         if (hasTreads){
             output.append("it has treads.\n");
         } else {
-            output.append("it does not have treads.\n");
+            output.append("""
+it does not have treads.
+if it did, the %s can go over rough terrain
+""".formatted("thing"));
         }
 
 
