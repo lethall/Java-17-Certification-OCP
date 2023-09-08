@@ -1,11 +1,14 @@
 package com.javafoundry.ocpJava17.project.b;
 
+import com.javafoundry.ocpJava17.project.c.Days;
+
+import java.text.ParseException;
 import java.util.logging.ConsoleHandler;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public class Tests {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws ParseException {
 //        QuadCopter littleDrone = new QuadCopter();
 //        System.out.println(littleDrone);
 //
@@ -23,5 +26,6 @@ public class Tests {
         PickupTruck silverado = new PickupTruck("purple");
         log.finest("My truck: " + silverado);
         Integer.parseInt("2");
+        System.out.println(Days.calcDiffDays("06-20-2023", "05-21-2023"));
     }
 }
